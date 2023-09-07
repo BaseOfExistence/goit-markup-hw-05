@@ -193,7 +193,6 @@ img{
     margin-right: auto;
     background-size: cover;
     padding: 188px 0;
-    position: relative;
 }
 .info-section{
     background-color: var(--bg);
@@ -455,7 +454,7 @@ img{
 .footer-media{
     margin-right: 80px;
 }
-.footer-label{
+.footer-text-item{
     display: block;
     font-family: Roboto;
     font-size: 16px;
@@ -467,24 +466,25 @@ img{
     margin-bottom: 16px;
 }
 .footer-input{
-    width: 100%;
-    height: 100%;
+    width: 264px;
+    height: 40px;
     flex-shrink: 0;
-    border: none;
-    background-color: var(--dark-bg);
+    border-radius: 4px;
+    border: 1px solid var(--bg);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    color: var(--bg);
 }
 .subscribe-button{
-    display: inline-flex;
-    padding: 8px 24px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     border-radius: 4px;
     background-color: var(--target);
     cursor: pointer;
     border: none;
-}
-.subscribe-button-text{
+    min-width: 165px;
+    height: 40px;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -495,7 +495,8 @@ img{
     color: var(--bg);
 }
 .form-footer{
-    
+    display: flex;
+    gap: 24px;
 }
 .hero-form{
     position: absolute;
@@ -517,24 +518,6 @@ img{
 .hero-textarea{
     resize: none;
     display: block;
-}
-.footer-input-container{
-    width: 264px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid var(--bg);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background-color: var(--dark-bg);
-    margin-right: 24px;
-    padding: 8px 16px;
-}
-.hero-input-container{
-    width: 360px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 1px solid rgba(46, 47, 66, 0.40);
-    padding: 8px 16px;
 }
 .hero-form-title{
     text-align: center;
@@ -579,4 +562,7 @@ img{
     line-height: 24px;
     letter-spacing: 0.64px;
     color: var(--bg);
+}
+.bana{
+    margin-left: 16px;
 }

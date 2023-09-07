@@ -56,51 +56,6 @@
     <main>
       <!--Hero-->
       <section class="hero-section">
-        <form class="hero-form">
-          <button class="hero-clear-button">
-            <svg width="8" height="8">
-              <use href="./images/icons.svg#icon-close-black-18dp-1"></use>
-            </svg>
-          </button>
-          <label class="hero-form-title">
-            Leave your contacts and we will call you back</label
-          >
-          <label class="hero-label"
-            >Name
-            <div class="hero-input-container">
-              <input class="hero-input" type="text" name="user-name" />
-            </div>
-          </label>
-          <label class="hero-label"
-            >Phone
-            <div class="hero-input-container">
-              <input
-                class="hero-input"
-                type="tel"
-                name="user-phone-number"
-              /></div
-          ></label>
-          <label class="hero-label"
-            >Email
-            <div class="hero-input-container">
-              <input class="hero-input" type="email" name="user-email" /></div
-          ></label>
-          <label class="hero-label">
-            Comment
-            <div>
-              <textarea class="hero-textarea" name="user-comment"></textarea>
-            </div>
-          </label>
-          <input type="checkbox" />
-          <label
-            >I accept the terms and conditions of the&nbsp<a href=""
-              >Privacy Policy</a
-            ></label
-          >
-          <button class="hero-supmit-button" type="submit">
-            <span class="hero-supmit-button-text">Send</span>
-          </button>
-        </form>
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="button-service" type="button">Order Service</button>
@@ -502,22 +457,18 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-form-div">
+          <p class="footer-text-item">Subscribe</p>
           <form class="form-footer">
-            <label>
-              <span class="footer-label">Subscribe</span>
-              <div class="footer-input-container">
-                <input
-                  class="footer-input"
-                  name="footer-user-email"
-                  type="email"
-                  placeholder="E-mail"
-                />
-              </div>
-            </label>
+            <label class="footer-label"
+              ><input
+                class="footer-input text"
+                name="footer-user-email"
+                type="email"
+                placeholder="E-mail"
+            /></label>
             <button class="subscribe-button" type="submit">
-              <span class="subscribe-button-text">Subscribe</span
-              ><svg svg class="svg-icon" width="24" height="24">
+              Subscribe<svg class="svg-icon bana" width="24" height="24">
                 <use href="./images/icons.svg#icon-Frame-3"></use>
               </svg>
             </button>
@@ -525,5 +476,41 @@
         </div>
       </div>
     </footer>
+    <div>
+      <form class="hero-form">
+        <button class="hero-clear-button">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-1"></use>
+          </svg>
+        </button>
+        <label class="hero-form-title">
+          Leave your contacts and we will call you back</label
+        >
+        <label class="hero-label"
+          >Name
+          <input class="hero-input" type="text" name="user-name" />
+        </label>
+        <label class="hero-label"
+          >Phone
+          <input class="hero-input" type="tel" name="user-phone-number" />
+        </label>
+        <label class="hero-label"
+          >Email<input class="hero-input" type="email" name="user-email"
+        /></label>
+        <label class="hero-label">
+          Comment
+          <textarea class="hero-textarea" name="user-comment"></textarea>
+        </label>
+        <input type="checkbox" />
+        <label
+          >I accept the terms and conditions of the&nbsp;<a href=""
+            >Privacy Policy</a
+          ></label
+        >
+        <button class="hero-supmit-button" type="submit">
+          <span class="hero-supmit-button-text">Send</span>
+        </button>
+      </form>
+    </div>
   </body>
 </html>

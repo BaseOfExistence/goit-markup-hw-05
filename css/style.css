@@ -541,6 +541,7 @@ img{
     line-height: 24px;
     letter-spacing: 0.32px;
     margin-bottom: 16px;
+    color: var(--dark-bg);
 }
 .hero-clear-button{
     z-index: 99999;
@@ -618,7 +619,7 @@ img{
 .clear-button-icon{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clear-button-icon:hover .clear-button-icon,
-.clear-button-icon:focus .clear-button-icon{
+.hero-clear-button:hover>.clear-button-icon,
+.hero-clear-button:focus>.clear-button-icon{
     fill: var(--bg);
 }

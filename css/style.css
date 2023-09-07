@@ -519,8 +519,10 @@ img{
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.48px;
+    color: #8e8f99;
+    margin-bottom: 4px;
 }
 .hero-input{
     display: block;
@@ -622,4 +624,7 @@ img{
 .hero-clear-button:hover>.clear-button-icon,
 .hero-clear-button:focus>.clear-button-icon{
     fill: var(--bg);
+}
+.hero-label-div{
+    margin-bottom: 8px;
 }

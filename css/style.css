@@ -479,6 +479,9 @@ img{
     color: var(--bg);
     line-height: 1.5;
 }
+.footer-input::placeholder{
+    color: var(--bg);
+}
 .subscribe-button{
     display: flex;
     justify-content: center;
@@ -512,6 +515,12 @@ img{
 }
 .hero-label{
     display: block;
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
 }
 .hero-input{
     display: block;
@@ -531,18 +540,30 @@ img{
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
+    margin-bottom: 16px;
 }
 .hero-clear-button{
+    z-index: 99999;
+    position: absolute;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     flex-shrink: 0;
     background-color: #E7E9FC;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
     display: flex;
-    margin-left: auto;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-clear-button:hover,
+.hero-clear-button:focus{
+    background-color: var(--accent);
+    border: none;
 }
 .hero-supmit-button{
     display: flex;
@@ -569,4 +590,35 @@ img{
 }
 .bana{
     margin-left: 16px;
+}
+.backdrop{
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-form-container{
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 408px;
+    min-height: 584px;
+    background-color: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),0px 1px 3px rgba(0, 0, 0, 0.12),0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+}
+.clear-button-icon{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clear-button-icon:hover .clear-button-icon,
+.clear-button-icon:focus .clear-button-icon{
+    fill: var(--bg);
 }

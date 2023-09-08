@@ -67,15 +67,6 @@ img{
 .logotipe-footer {
     color: var(--bg2);
 }
-.website-nav{
-    color: var(--dark-bg);
-    font-family: 'Roboto',sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-}
 .website-nav:hover,
 .website-nav:focus,
 .logotipe:hover,
@@ -88,9 +79,6 @@ img{
 .button-service:focus{
     background-color: var(--accent);
 }
-.website-nav:visited{
-    color: var(--dark-bg);
-}
 .link{
     color: #434455;
     font-family: 'Roboto',sans-serif;
@@ -100,6 +88,9 @@ img{
     line-height: 24px;
     letter-spacing: 0.32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:active{
+    color: var(--accent);
 }
 .hero-title{
     color: var(--bg);
@@ -249,22 +240,34 @@ img{
     gap: 40px;
 }
 .nav-item{
-    color: var(--accent);
+    color: var(--dark-bg);
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
 }
 .nav-item::after{
     display: block;
     content: '';
     width: 100%;
     height: 4px;
-    background-color: var(--accent);
+    background-color: transparent;
     border-radius: 2px;
     position: absolute;
     transform: translateY(27px);
     left: 0;
     bottom: -1px;
-    
+
+}
+.nav-item:active::after{
+    background-color: var(--accent);
+}
+.nav-item:active{
+    color: var(--accent);
 }
 .hero-container{
     flex-shrink: 0;
@@ -413,9 +416,6 @@ img{
 .dop-info-conteiner:hover .dop-info{
     transform: translateY(0);
 }
-.studio-color{
-    color: var(--accent);
-}
 .footer-part{
     margin-right: 120px
 }
@@ -532,11 +532,8 @@ img{
     height: 40px;
     padding-left: 38px;
     outline: transparent;
+    background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-textarea{
-    resize: none;
-    display: block;
 }
 .hero-form-title{
     text-align: center;
@@ -649,4 +646,35 @@ img{
 }
 .hero-input:focus + .input-icon{
     fill: var(--target);
+}
+.hero-textarea{    
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding: 8px 16px;
+    color: rgba(46, 47, 66, 0.40);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    width: 100%;
+    height: 120px;
+    flex-shrink: 0;
+    background-color: transparent;
+    outline: transparent;
+    display: block;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-textarea-container{
+    margin-bottom: 16px;
+}
+.hero-textarea:focus{
+    border-color: var(--target);
+}
+.hero-checkbox-container{
+    margin-bottom: 24px;
+}
+.hero-checkbox{
+
 }

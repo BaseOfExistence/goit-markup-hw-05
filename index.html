@@ -543,9 +543,8 @@
             </div>
           </div>
           <div class="hero-textarea-container">
-            <label class="hero-label">Comment</label>
+            <label for="user-comment" class="hero-label">Comment</label>
             <textarea
-              for="user-comment"
               id="user-comment"
               class="hero-textarea"
               name="user-comment"
@@ -556,11 +555,17 @@
             <input
               class="hero-checkbox visually-hidden"
               id="user-privacy"
+              name="user-privacy"
               type="checkbox"
               value="true"
             />
-            <label for="user-privacy"
-              >I accept the terms and conditions of the&nbsp;<a href=""
+            <label class="checkbox-label" for="user-privacy"
+              ><span class="checkbox-span"
+                ><svg class="checkbox-icon" width="8" height="10">
+                  <use
+                    href="./images/icons.svg#icon-PropertyClick"
+                  ></use></svg></span
+              >&nbsp;I accept the terms and conditions of the&nbsp;<a href=""
                 >Privacy Policy</a
               ></label
             >
